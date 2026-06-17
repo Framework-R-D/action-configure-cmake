@@ -21,6 +21,7 @@
 | `extra-options` | Additional CMake configuration options | false | `` |
 | `enable-form` | Enable FORM support | false | `ON` |
 | `form-root-storage` | Enable FORM root storage | false | `ON` |
+| `form-rntuple-storage` | Enable FORM RNTuple storage | false | `ON` |
 | `generator` | Specify CMake generator | false | `Ninja` |
 | `cpp-compiler` | The C++ compiler to use | false | `g++` |
 
