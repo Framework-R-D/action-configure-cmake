@@ -17,8 +17,8 @@ extracted for standalone reuse.
 | `preset` | CMake preset to use (e.g., coverage, default) | False | default |
 | `source-path` | Path where source code is checked out | False | phlex-src |
 | `build-path` | Path for build directory | False | phlex-build |
-| `build-type` | CMake build type (Release, Debug, etc.) [do not use with coverage presets] | False |  |
-| `extra-options` | Additional CMake configuration options | False |  |
+| `build-type` | CMake build type (Release, Debug, etc.) [do not use with coverage presets] | False | |
+| `extra-options` | Additional CMake configuration options | False | |
 | `enable-form` | Enable FORM support | False | ON |
 | `form-root-storage` | Enable FORM root storage | False | ON |
 | `generator` | Specify CMake generator | False | Ninja |
