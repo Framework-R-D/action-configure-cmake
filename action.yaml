@@ -73,7 +73,12 @@ runs:
 
         # Add extra options
         if [ -n "$EXTRA_OPTIONS" ]; then
-          CMAKE_ARGS+=($EXTRA_OPTIONS)
+          if [[ "$EXTRA_OPTIONS" == *$'\n'* || "$EXTRA_OPTIONS" == *$'\r'* ]]; then
+            echo '::error::extra-options must be a single whitespace-separated argument list.'
+            exit 1
+          fi
+          read -r -a extra_args <<< "$EXTRA_OPTIONS"
+          CMAKE_ARGS+=("${extra_args[@]}")
         fi
 
         # Run CMake
