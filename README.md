@@ -37,6 +37,8 @@
 
 ## Notes
 
+`extra-options` is a single whitespace-separated argument list, not a shell program; line breaks are rejected and wildcard characters are not expanded against checkout files. Existing quote characters are not interpreted as shell quoting. CMake presets, compiler choices, source scripts, and configuration options can still execute code and must belong to a caller-authorized snapshot and trusted build environment.
+
 > [!NOTE]
 > This action requires the `ghcr.io/framework-r-d/phlex-ci` container image
 > (sources `/entrypoint.sh` to activate the Spack environment).
